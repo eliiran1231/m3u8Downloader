@@ -1,0 +1,36 @@
+@if (this.downloader.lastDownloadedArray.length) {
+    <div class="status-container">
+        <p>successful:{{downloader.successful.size}}</p>
+        <p>unsuccessful:{{downloader.unsuccessful.size}}</p>
+        <p>pending:{{downloader.lastDownloadedArray.length - downloader.successful.size-downloader.unsuccessful.size}}</p>
+    </div>
+}
+<div id="download-menu">
+    <div class="options-container">
+        @for (option of options; track $index) {
+        <div (click)="downloadBy(option)" class="download-option">{{option.name}}</div>
+        }
+    </div>
+    <form (ngSubmit)="start(visibleForm.getFormControl().value)" [formGroup]="this.visibleForm.value" id="by-url">
+        <input accept=".m3u8" (change)="visibleForm.name=='file'?setFileValue($event):null" [type]="visibleForm.name"
+            [formControl]="visibleForm.getFormControl()" />
+        <button type="submit" [disabled]="!this.visibleForm.value.valid">download</button>
+    </form>
+    <div class="container clearfix">
+        @for(try of this.downloader.lastDownloadedArray; track $index){
+        <div
+            class="{{downloader.successful.has($index)?'successfulBlob':downloader.unsuccessful.has($index)?'failedBlob':'awaitBlob'}}">
+            {{$index + 1}}
+        </div>
+        }
+    </div>
+
+
+    @if (this.downloader.lastDownloadedArray.length != 0) {
+    <button (click)="downloader.download()">downlaod</button>
+    @if(downloader.unsuccessful.size > 0 && downloader.status().pending == 0){
+    <button (click)="downloader.scan()">scan</button>
+    <button (click)="downloader.quickScan()">quick scan</button>
+    }
+    }
+</div>

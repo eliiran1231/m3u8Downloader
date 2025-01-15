@@ -1,0 +1,75 @@
+.contact-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .facebook:hover {
+    color: #3b5998;
+    background-color: white;
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+  }
+  
+  .twitter:hover {
+    color: #1da1f2;
+    background-color: white;
+  }
+  
+  .linkedin {
+    background-color: #0077b5;
+  }
+  
+  .linkedin:hover {
+    color: #0077b5;
+    background-color: white;
+  }
+  
+  .instagram {
+    background-color: #e4405f;
+  }
+  
+  .instagram:hover {
+    color: #e4405f;
+    background-color: white;
+  }
+  
+  .github {
+    background-color: #333;
+  }
+  
+  .github:hover {
+    color: #333;
+    background-color: white;
+  }
