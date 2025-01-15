@@ -2,7 +2,7 @@
 
 **M3U8 Downloader** is a web-based application built with Angular that allows users to download video streams from `.m3u8` playlists. This tool provides a user-friendly interface for parsing `.m3u8` files, downloading video segments, and combining them into a single video file.
 ## purpose
-the purpose of this prject is to showcase basic angular capabilities while creating something helpful, the downloader itself may a lot of room to grow and improve and so feel free to contribute
+the purpose of this prject is to showcase basic angular capabilities while creating something helpful, the downloader itself may have a lot of room to grow and improve and so feel free to contribute
 
 ## Features
 - **User-Friendly Interface**: A clean and intuitive Angular-based UI for seamless interaction.
