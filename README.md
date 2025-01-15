@@ -15,7 +15,7 @@ the purpose of this prject is to showcase basic angular capabilities while creat
 1. **Enter M3U8 URL**: Input the URL of the `.m3u8` playlist in the provided field.
 2. **Download Video**: Click the "Download" button to start downloading and combining the video segments.
 3. **Monitor Progress**: Track the download progress and view the final output file.
-**keep in mind some parts of the video my fail to load, for that you have the scan and quick scan buttons to try and retrive them again, please avoid downloading before all parts of the video are in completed status!**
+**keep in mind some parts of the video may fail to load, for that case you have the scan and quick scan buttons to try and get them again, please avoid downloading before all parts of the video are in completed status!**
 
 ## Contributing
 
